@@ -1016,4 +1016,22 @@ header {
     .timeline__section .timeline__row .timeline__card:nth-last-child {
         margin-bottom: 0;
     }
+
+    .testimonials .testimonial-slider-thumbs .swiper-slide .clients_info {
+        display: none;
+    }
+
+    .testimonials .testimonial-slider-thumbs .swiper-slide-thumb-active .clients_info {
+        display: initial;
+    }
+
+    .banner-section {
+        height: 500px;
+    }
+    
+    .banner-section .banner-text {
+        left: 20%;
+        transform: translate(-10%, -50%);
+    }
+    
 }

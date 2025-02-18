@@ -8,7 +8,7 @@ import "swiper/css/free-mode";
 import "swiper/css/thumbs";
 import { FreeMode, Thumbs, Navigation } from "swiper/modules";
 
-export default function TestimonialSlider({testimonials}) {
+export default function TestimonialSlider({ testimonials }) {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const mainSwiperRef = useRef(null);
     const prevRef = useRef(null);
@@ -72,9 +72,11 @@ export default function TestimonialSlider({testimonials}) {
                                         className="reviewer-img"
                                     />
                                 </div>
-                                <p>{"⭐".repeat(testimonial.rating)}</p>
-                                <h4>{testimonial.name}</h4>
-                                <p>{testimonial.role}</p>
+                                <div className="clients_info">
+                                    <p>{"⭐".repeat(testimonial.rating)}</p>
+                                    <h4>{testimonial.name}</h4>
+                                    <p>{testimonial.role}</p>
+                                </div>
                             </div>
                         </SwiperSlide>
                     ))}
