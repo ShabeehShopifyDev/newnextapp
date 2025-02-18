@@ -16,9 +16,11 @@ export default function ImageWithtext() {
             We help build and manage a team of world-class developers to bring
             your vision to life.
           </p>
-          <Link className="button" href="#">
-            Let’s get started!
-          </Link>
+          <div className="btn_wrapper">
+            <Link className="button" href="#">
+              Let’s get started!
+            </Link>
+          </div>
         </div>
         <div className="image">
           <Image src="/teamwork.png" alt="Team Collaboration" height={1024} width={1024} />

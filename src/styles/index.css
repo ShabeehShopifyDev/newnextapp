@@ -941,3 +941,79 @@ header {
     height: 40px;
     transition-duration: .35s;
 }
+
+.header_wrapper .bars {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .header_wrapper {
+        justify-content: space-between;
+    }
+
+    .header_wrapper .navbar {
+        display: none;
+    }
+
+    .header_wrapper .others_wrapper {
+        display: none;
+    }
+
+    .header_wrapper .bars {
+        display: inline;
+    }
+
+    .imagewithtext .container {
+        flex-direction: column;
+        row-gap: 80px;
+    }
+
+    .imagewithtext .container .content {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .imagewithtext .container .content .btn_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .counter-section .counter-container .counter-item {
+        flex: 0 0 calc(50% - 8px);
+    }
+
+    .about_section {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .approach-section .approach-grid .approach-card {
+        flex: 0 0 100%;
+    }
+
+    .featuredportfolio .slider-container .swiper-slide {
+        padding: 0;
+    }
+
+    .featuredportfolio .portfolio_wrapper .navigation {
+        display: none;
+    }
+
+    .timeline__section .timeline__row.row__1,
+    .timeline__section .timeline__row.row__2 {
+        padding: 0;
+    }
+
+    .timeline__section .timeline__line {
+        display: none;
+    }
+
+    .timeline__section .timeline__row .timeline__card {
+        flex: 0 0 80%;
+        margin-bottom: 20px;
+    }
+
+    .timeline__section .timeline__row .timeline__card:nth-last-child {
+        margin-bottom: 0;
+    }
+}
