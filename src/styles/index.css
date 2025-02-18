@@ -676,6 +676,7 @@ header {
     border: none;
     padding: 10px 15px;
     cursor: pointer;
+    z-index: 99;
 }
 
 .footer .copyright {
@@ -884,6 +885,7 @@ header {
     background: #26e860;
     border-radius: 50%;
     padding: 5px;
+    z-index: 99;
 }
 
 .ww-icon-link path {
@@ -947,6 +949,12 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+
+
+    .header_wrapper .barndlogo {
+        flex: 1 0 0;
+    }
+
     .header_wrapper {
         justify-content: space-between;
     }
@@ -960,7 +968,9 @@ header {
     }
 
     .header_wrapper .bars {
-        display: inline;
+        display: flex;
+        flex: 0 0 30%;
+        justify-content: end;
     }
 
     .imagewithtext .container {
@@ -1028,10 +1038,26 @@ header {
     .banner-section {
         height: 500px;
     }
-    
+
     .banner-section .banner-text {
         left: 20%;
         transform: translate(-10%, -50%);
     }
-    
+
+    .ww-icon-link {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .featuredportfolio .portfolio_wrapper .slider-container {
+        margin-top: 20px;
+    }
+
 }
