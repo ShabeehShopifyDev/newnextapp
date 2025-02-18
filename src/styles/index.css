@@ -1060,4 +1060,30 @@ header {
         margin-top: 20px;
     }
 
+
+    .header_wrapper .navbar {
+        display: initial;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 70%;
+        background: #fff;
+        z-index: 100;
+        transition-duration: .7s;
+    }
+
+    .header_wrapper .navbar.active {
+        right: 0;
+    }
+
+    .header_wrapper .navbar .navigations {
+        padding: 30px 20px;
+        background: #fff;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        font-size: 20px;
+    }
+
 }
